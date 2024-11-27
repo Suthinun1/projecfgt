@@ -1,0 +1,594 @@
+/* ตั้งค่าให้ body มีการจัดกลาง (centered) */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* สไตล์ของ container ที่ใช้สำหรับฟอร์มล็อกอิน */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* ตั้งค่าหัวข้อ */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+}
+
+/* สไตล์ของ input field */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007BFF;
+}
+
+/* ปุ่มเข้าสู่ระบบ */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* การแสดงข้อความลิงค์ */
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* การแสดงข้อผิดพลาด */
+.error {
+    color: #ff4d4d;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* ตั้งค่าให้ body มีการจัดกลาง (centered) */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* สไตล์ของ index-container */
+.index-container {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* หัวข้อที่ใหญ่ */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ข้อความที่รองรับ */
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* การจัดตำแหน่งลิงก์ */
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+/* สไตล์ของปุ่ม */
+a {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* ปุ่มสำหรับ ADMIN */
+.login-btn {
+    background-color: #007bff;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* ปุ่มเลื่อนขึ้นเมื่อ hover */
+}
+
+/* ปุ่มสำหรับ USER */
+.create-btn {
+    background-color: #28a745;
+}
+
+.create-btn:hover {
+    background-color: #218838;
+    transform: translateY(-3px); /* ปุ่มเลื่อนขึ้นเมื่อ hover */
+}
+
+/* เพิ่ม responsiveness สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    .index-container {
+        width: 90%;
+        padding: 30px;
+        
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+/* ตั้งค่าพื้นฐานสำหรับทั้งหน้า */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ตั้งค่าฟอนต์และพื้นหลังทั่วไป */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* สไตล์ของ container */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* หัวข้อ */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-admin {
+    font-size: 16px;
+    color: #888;
+}
+
+/* สไตล์ของ input */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* ปุ่ม Submit */
+.submit-group {
+    margin-top: 20px;
+}
+
+.btn-admin {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-admin:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* ลิงก์สลับการเข้าสู่ระบบ (สามารถใช้งานได้หากเปิดใช้งาน) */
+.text-p-sw {
+    font-size: 14px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.text-p-sw a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-p-sw a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness สำหรับอุปกรณ์ขนาดเล็ก */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .btn-admin {
+        font-size: 14px;
+    }
+}
+
+
+/* ตั้งค่าเบื้องต้นสำหรับทั้งหน้า */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* สีพื้นหลังอ่อนๆ */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* สไตล์สำหรับ Container ของห้องพัก */
+.rooms-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* หัวข้อหลัก */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* แสดงข้อความทักทาย */
+p {
+    font-size: 16px;
+    color: #888;
+}
+
+/* ส่วนของการแสดงห้องพัก */
+.rooms-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* รูปแบบของแต่ละห้องพัก */
+.room-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.room-item:hover {
+    transform: translateY(-5px);
+}
+
+.room-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.room-item h4 {
+    font-size: 20px;
+    color: #333;
+    margin: 15px;
+    margin-bottom: 10px;
+}
+
+.room-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 15px 15px;
+}
+
+.room-item .reserve-btn {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.room-item .reserve-btn:hover {
+    background-color: #0056b3;
+}
+
+/* ปุ่มออกจากระบบ */
+.logout-btn {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #bbb;
+}
+
+/* สไตล์สำหรับแสดงกรอบแจ้งเตือนหากไม่มีห้องพัก */
+.no-room-message {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px s
+}
+
+/* ตั้งค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* สีพื้นหลังอ่อน */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* สไตล์สำหรับ container ที่อยู่ตรงกลาง */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* หัวข้อ */
+h1 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.text-admin {
+    font-size: 16px;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* กลุ่ม input */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+/* ปุ่ม submit */
+.submit-group {
+    margin-top: 20px;
+}
+
+.btn-admin {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-admin:hover {
+    background-color: #0056b3;
+}
+
+/* หากมีข้อความสำหรับการสลับไปยัง login แบบอื่น */
+.text-p-sw {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.text-sw-admin {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-sw-admin:hover {
+    text-decoration: underline;
+}
+
+/* เพิ่มความสะดวกในการใช้งานบนมือถือ */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .btn-admin {
+        font-size: 14px;
+    }
+}
