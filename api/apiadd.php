@@ -30,7 +30,7 @@ if (isset($_REQUEST['username']) && isset($_REQUEST['password'])) {
             
             echo "<script>
                     alert('Login successful!');
-                    window.location.href = '../selectroom.php';
+                    window.location.href = '../index.php';
                   </script>";
             exit;
         } else {
